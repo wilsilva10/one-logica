@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha(){
+        document.write("<br>");
+    }
+    // funcao para mostrar na tela com um parametro de frase
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    } 
+    var vitorias = parseInt(prompt("Entre com o números de vitórias: "));
+    var empates = parseInt(prompt("Entre com o números de empates: "));
+    var pontos = (vitorias * 3) + empates; 
+
+    mostra("Os pontos do seu time é: " + pontos);
+
+    if (pontos >= 28) {
+        mostra("Seu time está acima ou igual de 28 pontos");
+    } else {
+        mostra("Seu time está abaixo de 28 pontos");
+    } if(pontos == 28){
+        mostra("Seu time está com 28 pontos");
+    }
+</script>
