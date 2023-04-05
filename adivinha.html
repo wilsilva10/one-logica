@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<script>
+    //tente adivinhar o número
+    function pulaLinha(){
+        document.write("<br>");
+    }
+    // funcao para mostrar na tela com um parametro de frase
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    } 
+    var numeroPensando = Math.round(Math.random()*10); 
+    var chute = parseInt(prompt("Chute um número: "));
+    
+    if(chute == numeroPensando){
+        mostra("Você acertou!! O número pensando é o: "+ numeroPensando);
+    }else{
+        mostra("Você errou!! O número pensando foi: "+ numeroPensando);
+    }
+</script>
