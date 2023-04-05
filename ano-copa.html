@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+
+<script>
+    //tente adivinhar o número
+    function pulaLinha(){
+        document.write("<br>");
+    }
+    // funcao para mostrar na tela com um parametro de frase
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    } 
+     var anoCopa = 1930;
+     while(anoCopa <= 2022){
+        mostra("Teve copa em: "+ anoCopa);
+        anoCopa = anoCopa + 4;
+     }
+     mostra("FIM");
+</script>
