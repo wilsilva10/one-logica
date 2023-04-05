@@ -11,11 +11,17 @@
         pulaLinha();
     } 
     var numeroPensando = Math.round(Math.random()*10); 
-    var chute = parseInt(prompt("Chute um número: "));
-    
-    if(chute == numeroPensando){
-        mostra("Você acertou!! O número pensando é o: "+ numeroPensando);
-    }else{
-        mostra("Você errou!! O número pensando foi: "+ numeroPensando);
+    var tentativa = 1;
+    while(tentativa <= 3){
+        var chute = parseInt(prompt("Chute um número: "));
+        
+        if(chute === numeroPensando){
+            mostra("Você acertou!! O número pensando é o: "+ numeroPensando);
+            break;
+        } else{
+            mostra("Você errou!!");
+        }
+        tentativa++;
     }
+    mostra("FIM!");
 </script>
